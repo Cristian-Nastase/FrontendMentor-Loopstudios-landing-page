@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/style.css">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav hidden">
+      <div class="nav__top">
+        <picture class="nav__logo">
+          <img src="/images/logo.svg" alt="logo" />
+        </picture>
+        <button class="nav__button" type="button"></button>
+      </div>
+
+      <div class="nav__buttons">
+       <a href="" class="nav__link">About</a>
+       <a href="" class="nav__link">Careers</a>
+       <a href="" class="nav__link">Events</a>
+       <a href="" class="nav__link">Products</a>
+       <a href="" class="nav__link">Support</a>
+      </div>
+    </nav>
+
+    <section class="header__hero">
+        <picture class="hero__background">
+          <source 
+          srcset="/images/desktop/image-hero.jpg" 
+          media="(width >= 64em)" />
+          <img src="/images/mobile/image-hero.jpg" alt=" hero" loading="lazy">
+        </picture>
+        <div class="hero__content">
+          <div class="hero__top">
+            <picture class="hero__logo">
+              <img src="/images/logo.svg" alt="logo" loading="lazy"/> 
+            </picture>
+            <button class="hero__button" type="button"></button>
+            <nav class="desktop__nav hidden">
+              <a href="" class="nav__link">About</a>
+              <a href="" class="nav__link">Careers</a>
+              <a href="" class="nav__link">Events</a>
+              <a href="" class="nav__link">Products</a>
+              <a href="" class="nav__link">Support</a>
+            </nav>
+          </div>
+          <p class="hero__text">
+            Immersive experiences that deliver
+          </p>
+      </div>
+
+    </section>
+  </header>
+
+  <main class="main"> 
+    <section class="main__info">
+      <picture class="info__image">
+        <source
+        srcset="/images/desktop/image-interactive.jpg" 
+        media="(width >= 64rem)" />
+        <img src="/images/mobile/image-interactive.jpg" alt="vr" loading="lazy">
+      </picture>
+      <div class="info__text">
+        <h2 class="info__header">The leader in interactive VR</h2>
+        <p class="info__paragraph">
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.        
+        </p>
+      </div>
+    </section>
+
+    <section class="main__grid">
+      <h1 class="grid__header">Our creations</h1>
+
+      <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-deep-earth.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-deep-earth.jpg" alt="deep-earth"/>
+        </picture>
+        <figcaption>Deep earth</figcaption>
+      </figure>
+
+      <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-night-arcade.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-night-arcade.jpg" alt="night-arcade"/>
+        </picture>
+        <figcaption>Night arcade</figcaption>
+      </figure>
+            
+      <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-soccer-team.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-soccer-team.jpg" alt="soccer-team"/>
+        </picture>
+        <figcaption>Soccer team VR</figcaption>
+      </figure>
+
+      <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-grid.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-grid.jpg" alt="the-grid"/>
+        </picture>
+        <figcaption>The grid</figcaption>
+      </figure>
+            
+      <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-from-above.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-from-above.jpg" alt="from-above"/>
+        </picture>
+        <figcaption>From up above VR</figcaption>
+      </figure>
+      
+      <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-pocket-borealis.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-pocket-borealis.jpg" alt="pocket-borealis"/>
+        </picture>
+        <figcaption>Pocket borealis</figcaption>
+      </figure>
+            <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-curiosity.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-curiosity.jpg" alt="curiosity"/>
+        </picture>
+        <figcaption>The curiosity</figcaption>
+      </figure>
+      
+      <figure class="grid__figure">
+        <picture>
+          <source
+          srcset="/images/desktop/image-fisheye.jpg"
+          media="(width >= 64rem)" />
+          <img src="/images/mobile/image-fisheye.jpg" alt="fisheye"/>
+        </picture>
+        <figcaption>Make it fisheye</figcaption>
+      </figure>
+
+      <button class="grid__button" type="button">See all</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <picture class="footer__logo">
+      <img src="/images/logo.svg" alt="logo" />
+    </picture>
+
+    <div class="footer__links">
+      <a href="" class="footer__link">About</a>
+      <a href="" class="footer__link">Careers</a>
+      <a href="" class="footer__link">Events</a>
+      <a href="" class="footer__link">Products</a>
+      <a href="" class="footer__link">Support</a>
+    </div>
+
+    <div class="footer__social">
+      <picture class="footer__icon">
+        <img src="/images/icon-facebook.svg" alt="facebook" />
+      </picture>
+
+      <picture class="footer__icon">
+        <img src="/images/icon-twitter.svg" alt="twitter" />
+      </picture>
+
+      <picture class="footer__icon">
+        <img src="/images/icon-pinterest.svg" alt="pinterest" />
+      </picture>
+
+      <picture class="footer__icon">
+        <img src="/images/icon-instagram.svg" alt="instagram" />
+      </picture>
+
+    </div>
+      <p class="footer__copyright">
+        © 2021 Loopstudios. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

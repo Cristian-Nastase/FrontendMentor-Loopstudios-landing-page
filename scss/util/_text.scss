@@ -1,0 +1,63 @@
+@forward 'fonts';
+
+@mixin header
+{
+    font-family: 'JosefinSansLight';
+    font-size: clamp(1.5rem, 1.2rem + 5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: 0;
+
+    text-transform: uppercase;
+}
+
+@mixin small-header
+{
+    font-family: 'JosefinSansLight';
+    font-size: clamp(1rem, 0.5rem + 5vw, 3rem);
+    line-height: 1;
+    letter-spacing: 0;
+
+    text-transform: uppercase;
+}
+
+@mixin paragraph
+{
+    font-family: 'AlataRegular';
+    font-size: clamp(0.94rem, 0.5rem + 5vw, 1.1rem);
+    line-height: 1.65;
+    letter-spacing: 0;
+}
+
+@mixin spacing-paragraph
+{
+    font-family: 'AlataRegular';
+    font-size: 0.875rem;
+    line-height: 1;
+    letter-spacing: 0.32rem;
+}
+
+a
+{
+    position: relative;
+    &::after
+    {
+        position: absolute;
+        left: 25%;
+        bottom: -10%;
+
+        content:"";
+
+        width: 50%;
+        height: 2px;
+
+        background-color: white;
+        
+        opacity: 0%;
+        transition: opacity 0.2s;
+    }
+
+    &:hover::after
+    {
+        opacity: 100%;
+    }
+}

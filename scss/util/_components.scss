@@ -1,0 +1,19 @@
+@use 'breakpoints' as b;
+
+@mixin logo
+{
+    display: flex;
+    width: 10rem;
+
+    @include b.breakpoint('medium')
+    {
+        width: 12rem;
+    }
+
+    img
+    {
+        width: 100%;
+        height: auto;
+        
+    }
+}
