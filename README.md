@@ -1,5 +1,7 @@
 # Frontend Mentor - Loopstudios landing page
 
+Live site URL - https://cristian-nastase-loopstudios.netlify.app/
+
 ![Design preview for the Loopstudios landing page coding challenge](preview.jpg)
 
 ## Welcome! 👋
