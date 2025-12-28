@@ -13,6 +13,54 @@
     {
         margin-bottom: var(--spacing-600);
     }
+
+    @include b.breakpoint('large')
+    {
+        .desktop__nav
+        {
+            z-index: 1;
+
+            display: flex;
+            position: relative;
+
+            gap: var(--spacing-400);
+
+            .nav__link
+            {
+                @include t.paragraph;
+                font-size: 1.5rem;
+                color: white;
+            }
+
+        }        
+        .hero__content
+        {
+            .hero__top
+            {
+                padding: var(--spacing-600) var(--spacing-1000);
+            }
+
+            .hero__text
+            {
+                box-sizing: content-box;
+                margin-top: 0;
+                margin-left: 10%;
+                align-self: flex-start;
+            }
+        }
+    }
+
+    @include b.breakpoint('xlarge')
+    {
+        .hero__content
+        {
+            .hero__text
+            {
+                margin: 0;
+                align-self: center;
+            }
+        }
+    }
 }
 
 
@@ -25,7 +73,7 @@
     img
     {
         width: 100%;
-        height: 80vh;
+        height: 100%;
         object-fit: cover;
     }
 }

@@ -17,3 +17,10 @@
         
     }
 }
+
+@mixin hidden
+{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+}

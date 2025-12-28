@@ -2,6 +2,8 @@
 @forward 'global';
 @forward 'util';
 @forward 'sections';
+@use 'util/components' as c;
+@use 'util/breakpoints' as b;
 
 body
 {
@@ -15,9 +17,32 @@ body
     overflow-x: hidden;
 }
 
+body.lock-scroll
+{
+    overflow-y: hidden;
+}
+
+.desktop__nav
+{
+    @include c.hidden;
+} 
+
+@include b.breakpoint('large')
+{
+    .hero__button
+    {
+        @include c.hidden;
+    }
+
+    .desktop__nav
+    {
+        display: flex;
+        visibility: visible;
+        position: relative;
+    }
+}
+
 .hidden
 {
-    display: none;
-    visibility: hidden;
-    position: absolute;
+    @include c.hidden;
 }

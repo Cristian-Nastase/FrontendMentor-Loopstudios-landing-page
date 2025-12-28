@@ -3,6 +3,7 @@
 
 .main__info
 {
+    position: relative;
     width: 100%;
     height: min-content;
 
@@ -21,6 +22,26 @@
     @include b.breakpoint('medium')
     {
         margin-bottom: var(--spacing-1000);
+        width: 80%;
+    }
+
+    @include b.breakpoint('large')
+    {
+        width: fit-content;
+        
+        flex-direction: row;
+        justify-content: start;
+        align-self: start;
+
+        margin-left: 10vw;
+        margin-top: var(--spacing-1000);
+    }
+
+    @include b.breakpoint('xlarge')
+    {
+        justify-content: center;
+        align-self: center;
+        margin-left: 0;
     }
     
     .info__image
@@ -47,6 +68,16 @@
                 height: 20rem;
             }
         }
+
+        @include b.breakpoint('large')
+        {
+            width: 50vw;
+
+            img
+            {
+                height: auto;
+            }
+        }
     }
 
     .info__text
@@ -70,6 +101,28 @@
             color: grey;
             text-align: center;
             @include t.paragraph;
+        }
+
+        @include b.breakpoint('large')
+        {
+            position: absolute;
+            background-color: white;
+            width: 88ch;
+            height: min-content;
+            padding: calc(var(--spacing-1000));
+
+            right: -70%;
+            bottom: -20%;
+            .info__header, .info__paragraph
+            {
+                text-align: left;
+            }
+        }
+
+        @include b.breakpoint('xlarge')
+        {
+            right: -10%;
+            bottom: 0%;
         }
     }
 }

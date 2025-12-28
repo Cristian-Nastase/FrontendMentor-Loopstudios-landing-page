@@ -101,4 +101,15 @@
             order: 3;
         }
     }
+
+    @include b.breakpoint('large')
+    {
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+        .footer__links
+        {
+            gap: var(--spacing-400);
+        }
+    }
 }

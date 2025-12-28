@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/style.css">
 
+  <script src="script.js" defer></script>
+
   <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
         <picture class="nav__logo">
           <img src="/images/logo.svg" alt="logo" />
         </picture>
-        <button class="nav__button" type="button"></button>
+        <button class="nav__button" type="button" inert=""></button>
       </div>
 
       <div class="nav__buttons">
@@ -32,7 +34,7 @@
         <picture class="hero__background">
           <source 
           srcset="/images/desktop/image-hero.jpg" 
-          media="(width >= 64em)" />
+          media="(width >= 80em)" />
           <img src="/images/mobile/image-hero.jpg" alt=" hero" loading="lazy">
         </picture>
         <div class="hero__content">
@@ -41,7 +43,7 @@
               <img src="/images/logo.svg" alt="logo" loading="lazy"/> 
             </picture>
             <button class="hero__button" type="button"></button>
-            <nav class="desktop__nav hidden">
+            <nav class="desktop__nav">
               <a href="" class="nav__link">About</a>
               <a href="" class="nav__link">Careers</a>
               <a href="" class="nav__link">Events</a>
